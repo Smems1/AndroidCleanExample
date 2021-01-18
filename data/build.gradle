@@ -43,4 +43,8 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
+
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.15"
+    implementation "com.google.code.gson:gson:2.8.6"
 }
