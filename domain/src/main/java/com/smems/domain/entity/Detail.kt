@@ -5,6 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class Detail(
+    val id: Int,
     val title: String,
     val description: String,
     val address: String
