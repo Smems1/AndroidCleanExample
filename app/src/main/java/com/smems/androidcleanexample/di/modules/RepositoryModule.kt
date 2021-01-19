@@ -1,5 +1,6 @@
 package com.smems.androidcleanexample.di.modules
 
+import android.content.Context
 import com.smems.data.dao.DetailsDao
 import com.smems.data.repository.DetailsDataRepository
 import com.smems.domain.repository.DetailsRepository
@@ -12,5 +13,6 @@ class RepositoryModule {
 
     @Singleton
     @Provides
-    fun provideDetailsRepository(detailsDao: DetailsDao): DetailsRepository = DetailsDataRepository(detailsDao)
+    fun provideDetailsRepository(context: Context, detailsDao: DetailsDao): DetailsRepository =
+        DetailsDataRepository(context, detailsDao)
 }

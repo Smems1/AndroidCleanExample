@@ -26,7 +26,7 @@ class MainActivity : BaseActivity() {
             observe(details) {
                 Log.d(TAG, "Details count: ${it?.size ?: 0}")
                 it?.forEach { detail ->
-                    Log.d(TAG, "$detail")
+                    Log.d(TAG, "---\ntitle: ${detail.title}\ndescription: ${detail.description}\naddress: ${detail.address}\n")
                 }
             }
         }
